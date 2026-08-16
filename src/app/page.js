@@ -33,7 +33,7 @@ export default function Home() {
     setLoading(true);
 
     try {
-      const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:5000';
+      const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL ;
 
       const res = await fetch(`${backendUrl}/api/chat`, {
         method: 'POST',
